@@ -1,8 +1,6 @@
 ---
 import { ViewTransitions } from "astro:transitions";
 import { Header } from "../components/header";
-import { Background } from "../components/background";
-import CrystallizeLogo from "../assets/crystallize-logo.svg?url";
 
 interface Props {
   title: string;
@@ -10,11 +8,10 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
-const { pathname } = Astro.url;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -24,25 +21,14 @@ const { pathname } = Astro.url;
     <title>{title}</title>
     <ViewTransitions />
   </head>
-  <body class="relative text-text bg-primary">
+  <body class="relative text-text bg-gray-50">
     <Header client:only />
     <slot />
-    {
-      pathname === "/cart" ||
-      pathname === "/checkout" ||
-      pathname.startsWith("/order") ? null : (
-        <div class="absolute inset-0 bg-fixed -z-10">
-          <Background />
-        </div>
-      )
-    }
     <footer class="container mt-40 mx-auto pb-10">
-      <div class="flex mt-10  w-full text-center justify-end">
-        <div class="flex items-center gap-1 mt-10">
-          <img src={CrystallizeLogo} alt="Crystallize" class="w-5" />
-          Powered by <a href="https://crystallize.com" class="underline">
-            Crystallize</a
-          > + <a href="https://astro.build" class="underline">Astro</a>
+      <div class="flex mt-10 w-full text-center justify-end">
+        <div class="mt-10 text-gray-300 text-xs">
+          Build by <a href="https://priale.com" class="underline">Sinuhe</a>.
+          Based on <a href="https://astro.build" class="underline">Astro</a> theme.
         </div>
       </div>
     </footer>

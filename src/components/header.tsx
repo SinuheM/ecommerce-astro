@@ -1,15 +1,11 @@
-import { BasketButton } from "./basket-button";
-import AstroLogo from "../assets/astro-logo.svg";
+import AstroLogo from "../assets/logo.png";
 
 export const Header = () => {
-    return (
-        <header className="container flex justify-between mx-auto py-10 w-full">
-            <a href="/" title="AstroJS">
-                <img src={AstroLogo.src} alt="Dount and Astro logo" className="w-24" />
-            </a>
-            <a href="/cart" title="Your cart">
-                <BasketButton />
-            </a>
-        </header>
-    );
+  return (
+    <header className="container flex justify-between mx-auto py-10 w-full">
+      <a href="/" title="Car Product's">
+        <img src={AstroLogo.src} alt="Car Product's" className="w-12" />
+      </a>
+    </header>
+  );
 };
