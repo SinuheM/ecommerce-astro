@@ -2,6 +2,8 @@
 import Layout from "../layouts/Layout.astro";
 import { productList } from "../use-cases/queries/cc-products.ts";
 import { CcProducts } from "../components/CcProducts";
+import ReactWhatsapp from "../components/ReactWhatsapp";
+// import ReactWhatsappButton from "react-whatsapp-button";
 
 ---
 
@@ -10,5 +12,6 @@ import { CcProducts } from "../components/CcProducts";
   description="Venta de productos de automóviles">
   <div class="py-50 lg:container mx-auto w-full md:px-0 px-3">
     <CcProducts products={productList.products} />
+    <ReactWhatsapp element="button" number="+51985401483" message="Hola, mas información de todos los productos." />
   </div>
 </Layout>

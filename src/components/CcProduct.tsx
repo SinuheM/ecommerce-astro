@@ -15,6 +15,7 @@ export const CcProduct = ({ product, index }: { product: CcProductItem, index: n
           <h3 className="text-lg">
             {product?.brand}
           </h3>
+          <p className="text-sm">{`${product.stock} ${product.stock === 1 ? 'disponible' : 'disponibles'}`}</p>
         </div>
     </a>
   );
