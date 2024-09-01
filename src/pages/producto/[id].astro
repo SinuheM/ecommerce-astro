@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import CcDetail from "../../components/CcDetail";
 import { productList } from "../../use-cases/queries/cc-products";
+import ReactWhatsApp from "../../components/ReactWhatsapp";
 
 export const prerender = true;
 
@@ -18,7 +19,8 @@ const productData = productList.products[id];
 
 <Layout title={productData.name} description={productData?.name}>
   <div class="lg:container mx-auto w-full lg:px-0 px-5 flex flex-col gap-4 items-start">
-    <a href="/" class="border border-solid border-slate-200 py-2 px-4 mb-4 rounded text-gray-600 hover:text-gray-950 text-sm bg-white">&lt;&lt; Ver todos los productos</a>
+    <a href="/" class="border border-solid border-slate-200 py-3 px-4 mb-4 rounded text-gray-600 hover:text-gray-950 text-sm bg-white">&lt;&lt; Ver todos los productos</a>
     <CcDetail productData={productData} client:visible />
+    <ReactWhatsApp element="button" number="+51985401483" message={`Hola, mas información de la ${productData.name}.`} /> 
   </div>
 </Layout>
