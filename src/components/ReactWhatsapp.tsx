@@ -1,18 +1,12 @@
-import React from 'react';
-
 const URL = 'https://wa.me';
 
 const ReactWhatsApp = ({ number, message }: any) => {
-
-  number = number.replace(/[^\w\s]/gi, '').replace(/ /g, '');
-
-  let url = `${URL}/${number}`;
+  const numberFormatted = number.replace(/[^\w\s]/gi, '').replace(/ /g, '');
+  let url = `${URL}/${numberFormatted}`;
 
   if (message) {
     url += `?text=${encodeURI(message)}`;
   }
-
-  console.log({url});
 
   return (
     <a
@@ -20,6 +14,7 @@ const ReactWhatsApp = ({ number, message }: any) => {
       rel='noreferrer'
       href={url}
       className='whatsApp-button'
+      aria-label="Comprar por whatsApp"
     >
       <svg height="75px" width="75px" className='fixed bottom-8 right-8' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
         viewBox="0 0 512 512">
