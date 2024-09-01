@@ -18,14 +18,14 @@ const CcDetail = ({ productData }: { productData: CcProductItem }) => {
         </Carousel>
         <div className='md:ml-10 ml-5'>
           <ul className='text-gray-800 list-disc ml-4 md:mt-20'>
-            <li className='md:text-xl text-lg my-3'>Marca: {productData.brand}</li>
-            <li className='md:text-xl text-lg my-3'>Categoría: {productData.category}</li>
-            <li className='md:text-xl text-lg my-3'>Stock: {productData.stock}</li>
             <li className='md:text-xl text-lg my-3'>Precio: {' '}
               <span className='line-through text-base'>S/. {productData.initialPrice}</span>
               {' '}
               <span className='text-green-800 text-2xl'>S/. {productData.price}</span>
             </li>
+            <li className='md:text-xl text-lg my-3'>Marca: {productData.brand}</li>
+            <li className='md:text-xl text-lg my-3'>Categoría: {productData.category}</li>
+            <li className='md:text-xl text-lg my-3'>Stock: {productData.stock}</li>
             {productData.detail && <li className='md:text-xl text-lg my-3'>Detalles: {productData.detail}</li>}
           </ul>
         </div>
