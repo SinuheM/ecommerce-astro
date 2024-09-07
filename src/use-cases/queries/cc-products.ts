@@ -33,7 +33,7 @@ const productList = {
       ],
       "internetPriceRange": "34 - 49"
     },
-    {
+    /* {
       "name": "Cera Easy Shine Rojo",
       "detail": "Color rojo",
       "brand": "Sonax",
@@ -48,14 +48,14 @@ const productList = {
         'https://cdn.priale.com/cera_easy_sonax_o.png'
       ],
       "internetPriceRange": '25'
-    },
+    }, */
     {
       "name": "Cera siempre nuevo",
       "detail": "",
       "brand": "Simoniz",
       "brandImage": '',
       "category": "Ceras",
-      "stock": 16,
+      "stock": 15,
       "priceCC": 9,
       "price": 16,
       "initialPrice": 30,
@@ -74,7 +74,7 @@ const productList = {
       "brand": "Simoniz",
       "brandImage": '',
       "category": "Siliconas",
-      "stock": 2,
+      "stock": 1,
       "priceCC": 79,
       "price": 75,
       "initialPrice": 80,
@@ -100,7 +100,7 @@ const productList = {
       ],
       "internetPriceRange": null
     },
-    {
+    /* {
       "name": "Limpiador de Aros/Llantas",
       "detail": "",
       "brand": "Sonax",
@@ -115,14 +115,14 @@ const productList = {
         'https://cdn.priale.com/aros_o.jpg'
       ],
       "internetPriceRange": "28 - 42"
-    },
+    }, */
     {
       "name": "Aromatizador Shick - Fresh Car",
-      "detail": "Exotic Dream x 1 - Aqua x 1 - Black Ice x 2 - Carro Nuevo x2",
+      "detail": "Aqua x 1 - Black Ice x 1 - Carro Nuevo x2", 
       "brand": "Simoniz",
       "brandImage": '',
       "category": "Aromatizantes",
-      "stock": 6,
+      "stock": 4,
       "priceCC": 10,
       "price": 10,
       "initialPrice": 12,
