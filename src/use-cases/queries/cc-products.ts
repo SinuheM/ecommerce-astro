@@ -80,7 +80,7 @@ const productList = {
       "initialPrice": 80,
       "internetPrices": [],
       "image": [
-        'https://cdn.priale.com/silicona_simoniz_o.jpg'
+        'https://cdn.priale.com/silicona_simoniz_o_0.jpg'
       ],
       "internetPriceRange": null
     },
@@ -96,7 +96,7 @@ const productList = {
       "initialPrice": 120,
       "internetPrices": [],
       "image": [
-        'https://cdn.priale.com/silicona_sonax_o.jpg'
+        'https://cdn.priale.com/silicona_sonax_o_1.jpg'
       ],
       "internetPriceRange": null
     },
